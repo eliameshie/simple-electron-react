@@ -15,8 +15,8 @@ if (
 
 function createMainWindow() {
 	mainWindow = new BrowserWindow({
-		width: 1100,
-		height: 800,
+		width: 1280,
+		height: 720,
 		show: false,
 		icon: `${__dirname}/assets/icon.png`,
 		webPreferences: {
@@ -57,7 +57,7 @@ function createMainWindow() {
 			installExtension(REACT_DEVELOPER_TOOLS).catch((err) =>
 				console.log('Error loading React DevTools: ', err)
 			)
-			mainWindow.webContents.openDevTools()
+			
 		}
 	})
 
